@@ -524,3 +524,32 @@ a.card:hover .card-link svg { transform: translateX(4px); }
   .btn:hover, a.card:hover, .card.lift:hover, .service-list li:hover, .info-item:hover, .partners a:hover { transform: none; }
   a.card:hover .card-media img, .zoom:hover img, .media-frame:hover img, .gallery-item:hover img { transform: none; }
 }
+
+/* ---------- Spec fixes, 25 Nov 2026: tap targets, readable text, narrow phones ---------- */
+.vh-h { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 900px) {
+  .site-footer a:not(.btn):not(:has(img, svg)) { display: inline-block; min-width: 44px; padding-top: 11px; padding-bottom: 11px; }
+  .site-footer ul { gap: 0; }
+  .site-footer li { margin-bottom: 0; padding-top: 0; padding-bottom: 0; align-items: center; }
+  .contact-list a { display: inline-block; padding-top: 11px; padding-bottom: 11px; }
+  .topbar a { display: inline-block; min-height: 44px; line-height: 44px; margin: -6px 0; }
+  .topbar .container { padding-top: 6px; padding-bottom: 6px; align-items: center; }
+}
+:root { --accent-text: #a94200; }
+[data-theme="dark"] { --accent-text: #ff8f45; }
+.eyebrow, .product .kicker { font-size: 0.86rem; color: var(--accent-text); }
+.hero .eyebrow, .page-hero .eyebrow, .band .eyebrow, .emergency .eyebrow { color: #ffb37a; }
+.field label .req, .req { color: var(--accent-text); }
+.tag, .gallery-item .cap { font-size: 0.85rem; }
+.crumbs a { display: inline-block; min-width: 44px; padding: 13px 0; }
+.filter-btn { min-height: 44px; }
+.brand { min-height: 44px; align-items: center; }
+.info-item a { display: inline-block; padding: 10px 0; overflow-wrap: anywhere; }
+.contact-grid > *, .field, form > * { min-width: 0; }
+@media (max-width: 900px) { .site-footer .social a, .site-footer .socials a, .site-footer a:has(svg) { width: 44px; height: 44px; } }
+@media (max-width: 380px) {
+  .header-inner { gap: 6px; padding-left: 12px; padding-right: 12px; }
+  .brand img { height: 30px; }
+  .header-actions { gap: 5px; }
+  .icon-btn, .header-call { width: 44px; height: 44px; min-height: 44px; }
+}

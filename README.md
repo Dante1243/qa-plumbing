@@ -1,5 +1,7 @@
 # QA Plumbing, Gas & Drainage: website redesign mockup
 
+> **Pitch points below were written when the site was built and most haven't been rechecked.** Confirmed 25 Nov 2026: WordPress 4.7.29, and the footer's "Emergency Plumbing" link is a 404. The dummy images are in the code, but visitors may not see them. Check each one on the live site, on a real phone, before saying it.
+
 A modern rebuild of http://qaplumbing.com.au for QA Plumbing Pty Ltd, 8 Rafferty Rd, Mandurah WA, (08) 9582 8822.
 It uses plain HTML, CSS and JS, with no framework or build step. All text, services, staff, licence numbers and photos come from their current site.
 
